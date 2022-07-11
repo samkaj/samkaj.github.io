@@ -1,0 +1,134 @@
+/* Font stuff. */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Secular+One&display=swap');
+
+:root {
+    --black: #151514;
+    --white: #fffcf2;
+    --grey: #807E8B;
+    --grey-var: #DFDFE2;
+    --primary: #ffafcc;
+    --primary-var: #ffc8dd;
+    --secondary: #a2d2ff;
+    --secondary-var: #bde0fe;
+    --contrast: #baf2bb;
+    --contrast-var: #baf2d8;
+}
+
+* {
+    margin: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Secular One', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+code {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+/* Navbar stuff. */
+.navbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    padding: 1.2rem;
+    border-bottom: solid 0.1px var(--grey-var);
+}
+
+.navbar img {
+    height: 1.5rem;
+    vertical-align: middle;
+    display: inline;
+    margin-right: 0.5rem;
+    float: left;
+}
+
+.navbar ul {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 0.5rem;
+}
+
+.navbar ul li {
+    padding: 0.5rem;
+    display: inline;
+}
+
+
+
+.socials img {
+    float: right;
+}
+
+.navbar ul li a,
+.socials a {
+    border-bottom: 0px solid;
+    text-decoration: none;
+    color: var(--grey);
+}
+
+#active,
+.navbar a:hover {
+    animation: hoverlink 100ms ease-in;
+    border-bottom-width: 2px;
+    color: var(--black);
+    border-color: var(--primary)
+}
+
+#samuel {
+    font-weight: bold;
+    color: var(--black);
+    font-size: 1.2rem;
+}
+
+#github {
+    padding: 2px;
+    border-radius: 3px;
+}
+
+#github:hover {
+    animation: hoversocial 300ms ease;
+    filter: invert(100%);
+    background-color: var(--white);
+}
+
+@keyframes hoverlink {
+    from {
+        border-bottom-width: 0px;
+    }
+
+    to {
+        border-bottom-width: 2px;
+    }
+}
+
+@keyframes hoversocial {
+    from {
+        filter: invert(0);
+        background-color: transparent;
+    }
+
+    to {
+        filter: invert(100%);
+        background-color: var(--white);
+    }
+}
+
+.navbar>.links {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.navbar>.socials {
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
+
+/* Mobile stuff. */
+@media only screen and (max-width: 600px) {}
