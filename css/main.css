@@ -3,7 +3,7 @@
 
 :root {
     --black: #151514;
-    --white: #fffcf2;
+    --white: #fffafe;
     --grey: #807E8B;
     --grey-var: #DFDFE2;
     --primary: #ffafcc;
@@ -19,13 +19,18 @@
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: var(--white);
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Secular One', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0.5rem;
 }
 
 code {
@@ -37,10 +42,11 @@ code {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    width: 800px;
+    width: 700px;
     margin: auto;
     padding: 1rem 0 1rem 0;
     border-bottom: 1px solid var(--grey-var);
+    margin-bottom: 1rem;
 }
 
 #home a {
@@ -67,8 +73,40 @@ code {
     margin-left: 1rem;
 }
 
+p {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    background-color: var(--primary-var);
+    color: var(--white)
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 700px;
+    margin: auto;
+    text-align: justify;
+    gap: 2rem;
+}
+
+#about-emoji {
+    border-radius: 100%;
+    background-color: var(--primary-var);
+    border: solid 5px var(--primary-var);
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
 /* Mobile stuff. */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .navbar {
         padding: 1rem;
         width: 100%;
@@ -76,5 +114,10 @@ code {
 
     .social {
         display: none;
+    }
+
+    .content {
+        width: 100%;
+        margin: auto;
     }
 }
