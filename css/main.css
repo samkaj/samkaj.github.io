@@ -34,101 +34,47 @@ code {
 
 /* Navbar stuff. */
 .navbar {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-    padding: 1.2rem;
-    border-bottom: solid 0.1px var(--grey-var);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 800px;
+    margin: auto;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px solid var(--grey-var);
 }
 
-.navbar img {
-    height: 1.5rem;
-    vertical-align: middle;
-    display: inline;
-    margin-right: 0.5rem;
-    float: left;
-}
-
-.navbar ul {
-    list-style: none;
-    padding-left: 0;
-    padding-top: 0.5rem;
-}
-
-.navbar ul li {
-    padding: 0.5rem;
-    display: inline;
-}
-
-
-
-.socials img {
-    float: right;
-}
-
-.navbar ul li a,
-.socials a {
-    border-bottom: 0px solid;
-    text-decoration: none;
-    color: var(--grey);
-}
-
-#active,
-.navbar a:hover {
-    animation: hoverlink 100ms ease-in;
-    border-bottom-width: 2px;
-    color: var(--black);
-    border-color: var(--primary)
-}
-
-#samuel {
+#home a {
     font-weight: bold;
     color: var(--black);
-    font-size: 1.2rem;
 }
 
-#github {
-    padding: 2px;
-    border-radius: 3px;
+.navbar a {
+    color: var(--grey);
+    text-decoration: none;
 }
 
-#github:hover {
-    animation: hoversocial 300ms ease;
-    filter: invert(100%);
-    background-color: var(--white);
+.navbar a:hover,
+#active {
+    border-bottom: solid 2px var(--primary);
+    color: var(--black);
 }
 
-@keyframes hoverlink {
-    from {
-        border-bottom-width: 0px;
-    }
-
-    to {
-        border-bottom-width: 2px;
-    }
+.social {
+    margin-left: auto;
 }
 
-@keyframes hoversocial {
-    from {
-        filter: invert(0);
-        background-color: transparent;
-    }
-
-    to {
-        filter: invert(100%);
-        background-color: var(--white);
-    }
-}
-
-.navbar>.links {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.navbar>.socials {
-    grid-column-start: 4;
-    grid-column-end: 4;
+.social a {
+    margin-left: 1rem;
 }
 
 /* Mobile stuff. */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 700px) {
+    .navbar {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .social {
+        display: none;
+    }
+}
