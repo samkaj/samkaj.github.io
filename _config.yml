@@ -28,4 +28,4 @@ twitter_username: 0xsamkaj
 github_username:  samkaj
 
 # Build settings
-theme: no-style-please
+remote_theme: riggraz/no-style-please
