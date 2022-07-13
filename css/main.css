@@ -11,7 +11,7 @@
     --primary-var: #ffc8dd;
     --secondary: #a2d2ff;
     --secondary-var: #bde0fe;
-    --contrast: #baf2bb;
+    --contrast: #9dd9be;
     --contrast-var: #baf2d8;
 }
 
@@ -53,7 +53,7 @@ code {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    width: 700px;
+    width: 900px;
     margin: auto;
     padding: 1rem 0 1rem 0;
     border-bottom: 1px solid var(--grey-var);
@@ -117,20 +117,52 @@ a:not(.navbar a):hover {
 .content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    width: 700px;
+    width: 900px;
     margin: auto;
     gap: 2rem;
     padding-bottom: 3rem;
+}
+
+aside #about-emoji {
+    width: 80%;
 }
 
 #about-emoji {
     border-radius: 100%;
     background-color: var(--primary-var);
     border: solid 5px var(--primary-var);
-    width: 80%;
     display: block;
     margin: 0 auto;
     margin-top: 2rem;
+}
+
+.home-banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2rem;
+    width: 500px;
+    margin: auto;
+    gap: 3rem;
+    text-align: center;
+}
+
+.home-banner img {
+    width: 150px;
+}
+
+.home-banner h1 {
+    font-size: 3rem;
+}
+
+.home-banner p {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: auto;
 }
 
 /* Mobile stuff. */
