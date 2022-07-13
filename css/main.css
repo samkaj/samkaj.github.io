@@ -6,6 +6,7 @@
     --white: #fffafe;
     --grey: #807E8B;
     --grey-var: #DFDFE2;
+    --light-grey: #ededf1;
     --primary: #ffafcc;
     --primary-var: #ffc8dd;
     --secondary: #a2d2ff;
@@ -17,10 +18,15 @@
 * {
     margin: 0;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: var(--black);
 }
 
 body {
     background-color: var(--white);
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 h1,
@@ -30,6 +36,11 @@ h4,
 h5,
 h6 {
     font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+hr {
+    border-top: 0.5px solid var(--light-grey);
     margin-bottom: 0.5rem;
 }
 
@@ -46,7 +57,6 @@ code {
     margin: auto;
     padding: 1rem 0 1rem 0;
     border-bottom: 1px solid var(--grey-var);
-    margin-bottom: 1rem;
 }
 
 #home a {
@@ -81,7 +91,25 @@ a {
     color: var(--primary);
 }
 
-a:hover {
+ul {
+    list-style: none;
+}
+
+li::before {
+    background-color: transparent;
+    content: "\2022";
+    color: var(--primary);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+li {
+    margin-bottom: 0.2rem;
+}
+
+a:not(.navbar a):hover {
     background-color: var(--primary-var);
     color: var(--white)
 }
@@ -91,8 +119,8 @@ a:hover {
     grid-template-columns: 2fr 1fr;
     width: 700px;
     margin: auto;
-    text-align: justify;
     gap: 2rem;
+    padding-bottom: 3rem;
 }
 
 #about-emoji {
@@ -117,7 +145,14 @@ a:hover {
     }
 
     .content {
+        display: grid;
+        grid-template-columns: 1fr;
         width: 100%;
         margin: auto;
+        padding: 1rem;
+    }
+
+    aside {
+        display: none;
     }
 }
