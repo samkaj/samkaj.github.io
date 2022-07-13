@@ -176,7 +176,8 @@ aside #about-emoji {
         display: none;
     }
 
-    .content {
+    .content,
+    .home-banner main {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
@@ -186,5 +187,13 @@ aside #about-emoji {
 
     aside {
         display: none;
+    }
+
+    .home-banner img {
+        width: 100px;
+    }
+
+    .home-banner h1 {
+        font-size: 1.2rem;
     }
 }
