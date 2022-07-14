@@ -1,36 +1,23 @@
 ---
 title: Samuel Kajava — I enjoy coding
 permalink: /
+layout: default
 ---
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Samuel Kajava — I enjoy coding</title>
-</head>
-
-<body>
-    <nav class="navbar">
-        <div id="home"><a href="/" id="active">Samuel Kajava</a></div>
-        <div><a href="about">About me</a></div>
-        <div><a href="blog">Blog</a></div>
-        <div class="social">
-            <a href="https://github.com/samkaj">GitHub</a>
-            <a href="https://linkedin.com/in/samuel-kajava">LinkedIn</a>
+<div class="home-banner">
+    <img id="about-emoji" src="/assets/emoji.png" alt="Emoji of me.">
+    <main>
+        <h1>Hello, I'm Samuel</h1>
+        <p class="mono">I'm a software engineering student and I enjoy coding and building keyboards. This is my website,
+            welcome!</p>
+        <hr>
+        <div class="recent-posts">
+            {% for post in site.posts %}
+                <a href="{{ post.url }}">
+                    <p class="home-tag">{{ post.tags[0] }}</p>
+                    <p class="home-date mono">{{ post.tags[1] }}</p><br>
+                    <p class="home-title">{{ post.title }}</p>
+                </a>
+            {% endfor %}
         </div>
-    </nav>
-    <div class="home-banner">
-        <img id="about-emoji" src="/assets/emoji.png" alt="Emoji of me.">
-        <main>
-            <h1>Hello, I'm Samuel</h1>
-            <p>I'm a software engineering student and I enjoy coding and building keyboards. This is my website,
-                welcome!</p>
-        </main>
-    </div>
-</body>
-
-</html>
+    </main>
+</div>
