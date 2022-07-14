@@ -2,15 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Secular+One&display=swap');
 
 :root {
-    --black: #151514;
+    --black: #171216;
     --white: #fffafe;
     --grey: #807E8B;
-    --grey-var: #DFDFE2;
-    --light-grey: #ededf1;
+    --grey-var: #efeff1;
+    --light-grey: #f5f5fb;
     --primary: #ffafcc;
     --primary-var: #ffc8dd;
-    --secondary: #a2d2ff;
-    --secondary-var: #bde0fe;
+    --secondary: #8dbde9;
+    --secondary-var: #a1c5e6;
     --contrast: #9dd9be;
     --contrast-var: #baf2d8;
 }
@@ -19,6 +19,13 @@
     margin: 0;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     color: var(--black);
+}
+
+.center {
+    width: 900px;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 body {
@@ -39,13 +46,24 @@ h6 {
     margin-bottom: 0.5rem;
 }
 
+p, li {
+    font-size: 0.9rem;
+}
+
 hr {
     border-top: 0.5px solid var(--light-grey);
     margin-bottom: 0.5rem;
 }
 
-code {
+code, .mono {
     font-family: 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+code {
+    border-radius: 5px;
+    background-color: var(--light-grey);
+    color: var(--grey);
+    padding: 0.2rem;
 }
 
 /* Navbar stuff. */
@@ -93,9 +111,46 @@ a {
 
 ul {
     list-style: none;
+
 }
 
-li::before {
+.recent-posts {
+    display: flex;
+    justify-content: center;
+}
+
+.recent-posts a {
+    display: block;
+    color: white;
+    background-color: var(--light-grey);
+    padding: 1rem;
+    border: solid 1px var(--grey-var);
+}
+
+.recent-posts a:hover {
+    background-color: var(--grey-var);
+}
+
+.recent-posts a p {
+    text-align: left;
+    float: left;
+}
+
+.home-date {
+    color: var(--grey);
+    font-size: 0.8rem;
+}
+
+.home-tag {
+    padding-right: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.home-title {
+    font-weight: bold;
+}
+
+li:not(.blog-posts)::before {
     background-color: transparent;
     content: "\2022";
     color: var(--primary);
@@ -109,7 +164,7 @@ li {
     margin-bottom: 0.2rem;
 }
 
-a:not(.navbar a):hover {
+a:not(.navbar a, .blog-posts a, .recent-posts a):hover {
     background-color: var(--primary-var);
     color: var(--white)
 }
@@ -154,9 +209,6 @@ aside #about-emoji {
     font-size: 3rem;
 }
 
-.home-banner p {
-    font-family: 'Fira Code', 'Courier New', Courier, monospace;
-}
 
 .colors {
     display: flex;
@@ -165,28 +217,74 @@ aside #about-emoji {
     margin: auto;
 }
 
+.blog-posts {
+    display: block;
+    padding: 1rem;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.blog-posts a {
+    display: block;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    float: left;
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.date {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    float: right;
+}
+
+.blog-posts a:hover {
+    text-decoration: underline;
+}
+
+.tag {
+    font-size: 1rem;
+    float: left;
+    margin-right: 0.5rem;
+}
+
 /* Mobile stuff. */
 @media only screen and (max-width: 800px) {
-    .navbar {
+    body {
         padding: 1rem;
+    }
+
+    .navbar {
         width: 100%;
     }
 
-    .social {
+    #home {
+        padding-left: 1rem;
+    }
+
+    .social, .social > * {
         display: none;
     }
 
+    .center,
     .content,
-    .home-banner main {
+    .home-banner {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
         margin: auto;
-        padding: 1rem;
     }
+
 
     aside {
         display: none;
+    }
+
+    .home-banner main {
+        width: 90%;
+        margin: auto;
     }
 
     .home-banner img {
@@ -194,6 +292,7 @@ aside #about-emoji {
     }
 
     .home-banner h1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
+
 }
