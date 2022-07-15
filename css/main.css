@@ -150,6 +150,12 @@ ul {
     font-weight: bold;
 }
 
+.blog-img {
+    width: 60%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
 li:not(.blog-posts)::before {
     background-color: transparent;
     content: "\2022";
