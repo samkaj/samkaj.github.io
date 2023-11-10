@@ -36,7 +36,7 @@
 		<li><a href="https://linkedin.com/samuel-kajava"><i class="fa-brands fa-linkedin-in" /></a></li>
 		<li>
 			<button on:click={toggleDarkMode}>
-				<i class={`fa-solid ${icon}`} />
+				<i style="width: 1em" class={`fixed-width fa-solid ${icon}`} />
 			</button>
 		</li>
 	</ul>
