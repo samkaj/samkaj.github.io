@@ -1,25 +1,48 @@
+@use 'colors' as *;
+
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+    margin: 0 100px;
 
 	ul {
-        display: flex;
+		display: flex;
 		width: 30vw;
 		padding: 0;
 		list-style-type: none;
 	}
 
-    #mid {
-        justify-content: center;
-    }
+	#mid {
+		justify-content: center;
+	}
 
-    #right {
-        justify-content: end;
-    }
+	#right {
+		justify-content: end;
+	}
 
 	li {
 		float: left;
 		margin: 1em;
 	}
+
+	#home-logo a {
+		font-size: 1.5em;
+		font-family: 'Lexend';
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	a {
+		text-decoration: none;
+        transition: color 0.1s linear;
+	}
+
+	a:hover {
+        color: var(--primary);
+	}
+
+    i {
+        font-size: 1.5em;
+    }
 }
