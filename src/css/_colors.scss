@@ -1,13 +1,13 @@
 html[data-theme='dark'] {
 	--primary: #ff3562;
-	--bg: #090b0b;
-	--fg: #fffcf7;
+	--bg: #070600;
+	--fg: #f7f7ff;
 }
 
 html[data-theme='light'] {
 	--primary: #ff3562;
-	--bg: #fffcf7;
-	--fg: #090b0b;
+	--bg: #f7f7ff;
+	--fg: #070600;
 }
 
 html {
@@ -24,4 +24,31 @@ p,
 a,
 i {
 	color: var(--fg);
+	transition: color 0.2s linear;
+}
+
+i {
+    padding: 2px;
+}
+
+.fa-linkedin-in:hover, .fa-github:hover {
+    background-color: var(--fg);
+	color: var(--bg);
+}
+
+.fa-github:hover {
+    border-radius: 100%;
+}
+
+.fa-linkedin-in {
+    padding: 3px 5px;
+}
+
+.fa-linkedin-in:hover {
+    border-radius: 5px;
+}
+
+.fa-moon:hover,
+.fa-sun:hover {
+	color: #f8e056;
 }
