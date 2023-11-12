@@ -4,45 +4,55 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    margin: 0 100px;
+	vertical-align: center;
+    margin: auto;
+    width: 80vw;
 
 	ul {
+		align-items: center;
 		display: flex;
-		width: 30vw;
 		padding: 0;
 		list-style-type: none;
 	}
 
-	#mid {
-		justify-content: center;
-	}
-
 	#right {
 		justify-content: end;
+        li {
+            margin-left: 2em;
+        }
 	}
 
 	li {
 		float: left;
-		margin: 1em;
 	}
 
-	#home-logo a {
+	#home-logo {
 		font-size: 1.5em;
-		font-family: 'Lexend';
+		font-family: 'Space Mono', sans-serif;
 		text-decoration: none;
-		font-weight: bold;
+		font-weight: 400;
 	}
 
-	a {
-		text-decoration: none;
-        transition: color 0.1s linear;
+	#home-logo:hover {
+		border-bottom: 2px transparent solid;
 	}
 
-	a:hover {
-        color: var(--primary);
+	#left {
+        li {
+            margin-right: 2em;
+        }
+		a {
+			text-decoration: none;
+			transition: border-color 0.1s linear;
+			border-bottom: 2px transparent solid;
+		}
+
+		a:hover {
+			border-bottom: 3px var(--primary) solid;
+		}
 	}
 
-    i {
-        font-size: 1.5em;
-    }
+	i {
+		font-size: 1.5em;
+	}
 }

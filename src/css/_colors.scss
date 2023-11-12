@@ -1,17 +1,21 @@
 html[data-theme='dark'] {
-	--primary: #ff3562;
-	--bg: #070600;
-	--fg: #f7f7ff;
+	--fg: #fcfaff;
+	--fg-lighter: #fcfaff;
+	--bg: #272932;
 }
 
 html[data-theme='light'] {
-	--primary: #ff3562;
-	--bg: #f7f7ff;
-	--fg: #070600;
+	--bg: #fcfaff;
+	--fg: #272932;
+	--fg-lighter: #6C7089;
 }
 
 html {
 	background-color: var(--bg);
+    padding: 1em;
+	--secondary: #937bd5;
+	--primary: #f1a4cc;
+	--tetriary: #f3d47f;
 }
 
 h1,
@@ -24,31 +28,33 @@ p,
 a,
 i {
 	color: var(--fg);
-	transition: color 0.2s linear;
+    text-decoration: none;
 }
+
 
 i {
-    padding: 2px;
+	padding: 2px;
 }
 
-.fa-linkedin-in:hover, .fa-github:hover {
-    background-color: var(--fg);
+.fa-linkedin-in:hover,
+.fa-github:hover {
+	background-color: var(--fg);
 	color: var(--bg);
 }
 
 .fa-github:hover {
-    border-radius: 100%;
+	border-radius: 100%;
 }
 
 .fa-linkedin-in {
-    padding: 3px 5px;
+	padding: 3px 5px;
 }
 
 .fa-linkedin-in:hover {
-    border-radius: 5px;
+	border-radius: 5px;
 }
 
 .fa-moon:hover,
 .fa-sun:hover {
-	color: #f8e056;
+	color: var(--tetriary);
 }

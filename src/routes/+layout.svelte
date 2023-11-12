@@ -21,16 +21,12 @@
 </script>
 
 <nav>
-	<ul>
-		<li id="home-logo"><a href="/">samkaj</a></li>
-	</ul>
-
-	<ul id="mid">
+	<ul id="left">
+	    <li><a id="home-logo" href="/">samkaj</a></li>
 		<li><a href="#">Projects</a></li>
 		<li><a href="#">Experience</a></li>
 		<li><a href="#">Contact</a></li>
 	</ul>
-
 	<ul id="right">
 		<li><a href="https://github.com/samkaj"><i class="fa-brands fa-github" /></a></li>
 		<li><a href="https://linkedin.com/samuel-kajava"><i class="fa-brands fa-linkedin-in" /></a></li>
@@ -42,3 +38,9 @@
 	</ul>
 </nav>
 <slot />
+
+<style lang="scss">
+    nav {
+        height: 3em;
+    }
+</style>
