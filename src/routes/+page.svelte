@@ -8,22 +8,26 @@
 				href="https://www.chalmers.se/en/education/find-masters-programme/computer-systems-and-networks-msc/"
 				>Computer Systems and Networks</a
 			>
-			at Chalmers and write software at <span class="bold purple">Ericsson</span>.
+			at Chalmers and write software at <span class="bold">Ericsson</span>.
 		</p>
 		<p>
-			I like to write maintainable code in fun languages while hacking around in <span
-				class="bold">Vim</span
-            > and <span class="bold">Linux</span>. My current focus is on writing performant distributed systems and learning as much
-			as possible.
+			I like to write maintainable code in fun languages while hacking around in <span class="bold"
+				>Vim</span
+			>
+			on <span class="bold">Linux</span> or <span class="bold">MacOS</span>. My current focus is on
+			writing performant distributed systems and learning as much as possible.
 		</p>
 	</article>
-	<aside />
+	<aside>
+		<img src="laptop.png" alt="laptop" />
+	</aside>
 </main>
 
 <style lang="scss">
 	main {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		flex-direction: row;
 		margin: auto;
 		width: 80vw;
@@ -36,8 +40,14 @@
 	}
 
 	aside {
-		height: 100%;
-		background-color: var(--fg);
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+		width: 50%;
+		img {
+			width: 80%;
+			margin-left: 20%;
+		}
 	}
 
 	h1 {
@@ -67,8 +77,4 @@
 	.pink:hover {
 		text-decoration: underline;
 	}
-
-    .purple {
-        color: var(--secondary);
-    }
 </style>

@@ -5,8 +5,8 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	vertical-align: center;
-    margin: auto;
-    width: 80vw;
+	margin: auto;
+	width: 80vw;
 
 	ul {
 		align-items: center;
@@ -17,9 +17,9 @@ nav {
 
 	#right {
 		justify-content: end;
-        li {
-            margin-left: 2em;
-        }
+		li {
+			margin-left: 2em;
+		}
 	}
 
 	li {
@@ -38,9 +38,9 @@ nav {
 	}
 
 	#left {
-        li {
-            margin-right: 2em;
-        }
+		li {
+			margin-right: 2em;
+		}
 		a {
 			text-decoration: none;
 			transition: border-color 0.1s linear;
