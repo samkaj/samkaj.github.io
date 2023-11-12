@@ -32,6 +32,7 @@
 		margin: auto;
 		width: 80vw;
 		height: 70vh;
+		min-height: 700px;
 	}
 
 	article {
