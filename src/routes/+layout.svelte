@@ -28,7 +28,7 @@
 		<li><a href="#">Contact</a></li>
 	</ul>
 	<ul id="right">
-		<li><a href="https://linkedin.com/samuel-kajava"><i class="fa-brands fa-linkedin-in" /></a></li>
+		<li><a href="https://linkedin.com/in/samuel-kajava"><i class="fa-brands fa-linkedin-in" /></a></li>
 		<li><a href="https://github.com/samkaj"><i class="fa-brands fa-github" /></a></li>
 		<li>
 			<button on:click={toggleDarkMode}>
