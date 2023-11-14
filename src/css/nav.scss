@@ -27,6 +27,7 @@ nav {
 	}
 
 	#home-logo {
+		display: block;
 		font-size: 1.5em;
 		font-family: 'Space Mono', sans-serif;
 		text-decoration: none;
@@ -54,5 +55,32 @@ nav {
 
 	i {
 		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	nav {
+		width: 80vw;
+		padding: 0;
+		flex-wrap: wrap;
+		justify-content: left;
+		position: relative;
+	}
+
+	#right {
+		display: none;
+	}
+
+	#left {
+		width: 100%;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+
+	#home-logo {
+		display: block;
+		text-align: left;
+		width: 80vw;
+		padding-bottom: 0.5em;
 	}
 }

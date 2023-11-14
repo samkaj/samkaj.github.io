@@ -78,4 +78,39 @@
 	.pink:hover {
 		text-decoration: underline;
 	}
+
+	@media only screen and (max-width: 600px) {
+		main {
+            height: 50vh;
+            max-height: 50vh;
+			flex-direction: column;
+			justify-content: center;
+			justify-items: left;
+			* {
+				margin: auto;
+			}
+		}
+
+		article {
+			width: 100%;
+		}
+
+		p {
+			margin-bottom: 0.5em;
+		}
+
+        aside,
+		img {
+			display: none;
+		}
+
+		h1::after {
+			display: block;
+			width: 28%;
+			margin-top: 0.5em;
+			content: '';
+			border-bottom: 3px solid var(--primary);
+			margin-bottom: 0.5em;
+		}
+	}
 </style>
