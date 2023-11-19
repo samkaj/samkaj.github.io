@@ -30,7 +30,6 @@
 		justify-content: space-between;
 		flex-direction: row;
 		margin: auto;
-		width: 80vw;
 		height: 70vh;
 		min-height: 700px;
 	}

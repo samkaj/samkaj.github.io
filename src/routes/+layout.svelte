@@ -28,7 +28,9 @@
 		<li><a href="#">Contact</a></li>
 	</ul>
 	<ul id="right">
-		<li><a href="https://linkedin.com/in/samuel-kajava"><i class="fa-brands fa-linkedin-in" /></a></li>
+		<li>
+			<a href="https://linkedin.com/in/samuel-kajava"><i class="fa-brands fa-linkedin-in" /></a>
+		</li>
 		<li><a href="https://github.com/samkaj"><i class="fa-brands fa-github" /></a></li>
 		<li>
 			<button on:click={toggleDarkMode}>
@@ -37,10 +39,17 @@
 		</li>
 	</ul>
 </nav>
-<slot />
+<div class="wrapper">
+	<slot />
+</div>
 
 <style lang="scss">
 	nav {
 		height: 3em;
+	}
+
+	.wrapper {
+		width: 80vw;
+		margin: auto;
 	}
 </style>
