@@ -23,7 +23,7 @@
 <nav>
 	<ul id="left">
 		<li><a id="home-logo" href="/">samkaj</a></li>
-		<li><a href="#">Projects</a></li>
+		<li><a href="/projects">Projects</a></li>
 		<li><a href="#">Experience</a></li>
 		<li><a href="#">Contact</a></li>
 	</ul>
