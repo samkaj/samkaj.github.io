@@ -19,6 +19,16 @@
 		alt={'the apskrift website'}
 		keywords={['Typing', 'TypeScript', 'Vanilla']}
 		github={'https://github.com/samkaj/apskrift'}
+		date={'nov 2023'}
+	/>
+	<Project
+		heading={'nadja'}
+		description={"Playlist generator using Spotify's API"}
+		src={'nadja.png'}
+		alt={'the nadja webapp'}
+		keywords={['Spotify', 'TypeScript', 'React']}
+		github={'https://github.com/samkaj/nadja'}
+		date={'apr 2023'}
 	/>
 </main>
 
