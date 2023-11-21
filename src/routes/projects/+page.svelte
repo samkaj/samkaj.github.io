@@ -10,13 +10,14 @@
 		alt={'screenshot of colorscheme written in lua'}
 		keywords={['Colorscheme', 'Vim', 'Editor']}
 		github={'https://github.com/samkaj/lakrits.nvim'}
+		date={'nov 2023'}
 	/>
 	<Project
 		heading={'apskrift.com'}
 		description={'Typing practice tool, write fast get high scores.'}
 		src={'apskrift.png'}
 		alt={'the apskrift website'}
-		keywords={['Typing practice', 'TypeScript', 'Vanilla']}
+		keywords={['Typing', 'TypeScript', 'Vanilla']}
 		github={'https://github.com/samkaj/apskrift'}
 	/>
 </main>

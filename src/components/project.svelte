@@ -5,6 +5,7 @@
 	export let alt: string;
 	export let github: string;
 	export let keywords: string[];
+	export let date: string;
 </script>
 
 <div class="project">
@@ -17,7 +18,10 @@
 		{/each}
 	</ul>
 	<br />
-	<p><a href={github}><i class="fa-brands fa-github no-invert" /> GitHub</a></p>
+	<p>
+		<a href={github}><i class="fa-brands fa-github no-invert" /> Repository</a>
+		<span class="date">{date}</span>
+	</p>
 </div>
 
 <style lang="scss">
@@ -69,5 +73,11 @@
 	.no-invert:hover {
 		background: none;
 		color: var(--fg);
+	}
+
+	.date {
+		color: var(--fg-lighter);
+		padding-left: 0.5em;
+		margin-left: 0.5em;
 	}
 </style>
