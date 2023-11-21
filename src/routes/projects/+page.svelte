@@ -34,8 +34,20 @@
 
 <style lang="scss">
 	main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-top: 1em;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding-top: 1em;
+		grid-gap: 2em;
+	}
+
+	h1 {
+		margin-bottom: 0.5em;
+	}
+
+	@media only screen and (max-width: 600px) {
+		main {
+			grid-template-columns: 1fr;
+			margin-top: 15%;
+		}
 	}
 </style>
