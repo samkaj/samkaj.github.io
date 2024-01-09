@@ -1,15 +1,17 @@
 <script lang="ts">
 	export let heading: string;
 	export let description: string;
-	export let src: string;
-	export let alt: string;
+	export let src: string = '';
+	export let alt: string = '';
 	export let github: string;
 	export let keywords: string[];
 	export let date: string;
 </script>
 
 <div class="project">
-	<img {src} {alt} />
+	{#if src}
+		<img {src} {alt} />
+	{/if}
 	<h1>{heading}</h1>
 	<p>{description}</p>
 	<ul id="keywords">
@@ -52,7 +54,7 @@
 	}
 
 	img {
-		width: 100%;
+        width: 100%;
 		margin-bottom: -10px;
 	}
 
