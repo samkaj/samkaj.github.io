@@ -2,6 +2,7 @@ html[data-theme='dark'] {
 	--fg: #fcfaff;
 	--fg-lighter: #fcfaff;
 	--bg: #272932;
+	--border: #4b4e5c;
 	background: radial-gradient(circle, rgba(39, 41, 50, 1) 47%, rgba(49, 44, 57, 1) 100%);
 }
 
@@ -9,6 +10,7 @@ html[data-theme='light'] {
 	--bg: #fcfaff;
 	--fg: #272932;
 	--fg-lighter: #6c7089;
+	--border: #e0e0e0;
 	background: radial-gradient(circle, rgba(252, 250, 255, 1) 47%, rgba(244, 237, 255, 1) 100%);
 }
 

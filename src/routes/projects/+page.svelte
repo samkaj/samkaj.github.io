@@ -81,6 +81,20 @@
 		margin-bottom: 0.5em;
 	}
 
+	h1 + p {
+		font-size: 1.2em;
+		border-bottom: solid 1px var(--border);
+		padding-bottom: 1em;
+	}
+
+	a {
+		color: var(--secondary);
+	}
+
+	a:hover {
+		color: var(--fg);
+	}
+
 	@media only screen and (max-width: 600px) {
 		div {
 			grid-template-columns: 1fr;
@@ -89,6 +103,10 @@
 
 		h1 {
 			display: none;
+		}
+
+		h1 + p {
+			margin-top: 3em;
 		}
 	}
 </style>
