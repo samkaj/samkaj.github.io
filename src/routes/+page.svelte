@@ -80,8 +80,8 @@
 
 	@media only screen and (max-width: 600px) {
 		main {
-            height: 50vh;
-            max-height: 50vh;
+			height: 50vh;
+			max-height: 50vh;
 			flex-direction: column;
 			justify-content: center;
 			justify-items: left;
@@ -98,7 +98,7 @@
 			margin-bottom: 0.5em;
 		}
 
-        aside,
+		aside,
 		img {
 			display: none;
 		}
