@@ -77,12 +77,11 @@
 	}
 
 	h1 {
-		font-size: 2.5em;
-		margin-bottom: 0.5em;
+		font-size: 2em;
 	}
 
 	h1 + p {
-		font-size: 1.2em;
+		font-size: 1em;
 		border-bottom: solid 1px var(--border);
 		padding-bottom: 1em;
 	}
@@ -106,7 +105,7 @@
 		}
 
 		h1 + p {
-			margin-top: 3em;
+			margin-top: 4em;
 		}
 	}
 </style>
