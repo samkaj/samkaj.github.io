@@ -56,7 +56,6 @@
 	}
 
 	* {
-		font-family: 'Titillum Web', sans-serif;
 		color: var(--fg);
 	}
 
