@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Project from '../../components/project.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <h1>personal</h1>
@@ -12,7 +13,7 @@
 	<Project
 		heading={'ftp client'}
 		description={'FTP client written in C++, implemented as a CLI.'}
-		src={'/ftp.png'}
+		src={base + '/ftp.png'}
 		alt={'code snippet of ftp client'}
 		keywords={['FTP', 'C++', 'CLI']}
 		github={'https://github.com/samkaj/ftp'}
@@ -21,7 +22,7 @@
 	<Project
 		heading={'apskrift.com'}
 		description={'Typing practice tool, write fast get high scores.'}
-		src={'/apskrift.png'}
+		src={base + '/apskrift.png'}
 		alt={'the apskrift website'}
 		keywords={['Typing', 'TypeScript', 'Vanilla']}
 		github={'https://github.com/samkaj/apskrift'}
@@ -30,7 +31,7 @@
 	<Project
 		heading={'nadja'}
 		description={"Playlist generator using Spotify's API."}
-		src={'/nadja.png'}
+		src={base + '/nadja.png'}
 		alt={'the nadja webapp'}
 		keywords={['Spotify', 'TypeScript', 'React']}
 		github={'https://github.com/samkaj/nadja'}
