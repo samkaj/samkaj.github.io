@@ -1,5 +1,5 @@
 <script lang="ts">
-	const emailAccessKey = import.meta.env.VITE_EMAIL_ACCESS_KEY;
+	const emailAccessKey = '6b335863-f977-4adf-a1f8-d4d7ee10fc2e';
 	export let status = '';
 	async function handleSubmit(e: SubmitEvent) {
 		status = 'Sending...';
