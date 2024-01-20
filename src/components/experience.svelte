@@ -47,8 +47,8 @@
 		float: left;
 		margin-right: 0.6em;
 		border-radius: 50px;
-        padding: 3px 15px;
-        font-weight: bold;
+		padding: 3px 15px;
+		font-weight: bold;
 		font-size: 1em;
 	}
 

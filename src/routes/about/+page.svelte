@@ -1,10 +1,14 @@
 <script lang="ts">
 	import Experience from '../../components/experience.svelte';
-    import Contact from '../../components/contact.svelte';
+	import Contact from '../../components/contact.svelte';
 </script>
 
 <h1>contact</h1>
-<p>Want to get in touch? Use the contact form below or email me at <a href="mailto:samuelkajava@proton.me">samuelkajava@proton.me</a>.</p>
+<p>
+	Want to get in touch? Use the contact form below or email me at <a
+		href="mailto:samuelkajava@proton.me">samuelkajava@proton.me</a
+	>.
+</p>
 <Contact />
 
 <h1>experience</h1>
