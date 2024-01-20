@@ -24,8 +24,7 @@
 	<ul id="left">
 		<li><a id="home-logo" href="/">samkaj</a></li>
 		<li><a href="/projects">Projects</a></li>
-		<li><a href="/experience">Experience</a></li>
-		<li><a href="#">Contact</a></li>
+		<li><a href="/about">About</a></li>
 	</ul>
 	<ul id="right">
 		<li>
