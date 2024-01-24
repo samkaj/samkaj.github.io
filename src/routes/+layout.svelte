@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {base} from '$app/paths';
+    import { base } from '$app/paths';
 	import { onMount } from 'svelte';
 	import '../css/nav.scss';
 	import '../css/main.scss';
