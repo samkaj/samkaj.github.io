@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
 	import '../css/nav.scss';
 	import '../css/main.scss';
@@ -23,9 +22,9 @@
 
 <nav>
 	<ul id="left">
-		<li><a id="home-logo" href="{base}/">samkaj</a></li>
-		<li><a href="{base}/projects">Projects</a></li>
-		<li><a href="{base}/about">About</a></li>
+		<li><a id="home-logo" href="/">samkaj</a></li>
+		<li><a href="/projects">Projects</a></li>
+		<li><a href="/about">About</a></li>
 	</ul>
 	<ul id="right">
 		<li>
