@@ -3,7 +3,6 @@ html[data-theme='dark'] {
 	--fg-lighter: #fcfaff;
 	--bg: #272932;
 	--border: #4b4e5c;
-	background: radial-gradient(circle, rgba(39, 41, 50, 1) 47%, rgba(49, 44, 57, 1) 100%);
 }
 
 html[data-theme='light'] {
@@ -11,18 +10,9 @@ html[data-theme='light'] {
 	--fg: #272932;
 	--fg-lighter: #6c7089;
 	--border: #e0e0e0;
-	background: radial-gradient(circle, rgba(252, 250, 255, 1) 47%, rgba(244, 237, 255, 1) 100%);
 }
 
 html {
-	background-image: linear-gradient(#fbf8ff 3.5px, transparent 3.5px),
-		linear-gradient(to right, #fbf8ff 3.5px, transparent 3.5px);
-	background-size: 64px 64px;
-	background-color: var(--bg);
-	padding: 1em;
-	--secondary: #937bd5;
-	--primary: #f1a4cc;
-	--tetriary: #f3d47f;
 }
 
 h1,
@@ -40,29 +30,4 @@ i {
 
 i {
 	padding: 2px;
-}
-
-.fa-linkedin-in:hover,
-.fa-github:hover,
-.fa-circle-half-stroke:hover {
-	background-color: var(--fg);
-	color: var(--bg);
-}
-
-.fa-github:hover,
-.fa-circle-half-stroke:hover {
-	border-radius: 100%;
-}
-
-.fa-linkedin-in {
-	padding: 3px 5px;
-}
-
-.fa-linkedin-in:hover {
-	border-radius: 5px;
-}
-
-.fa-moon:hover,
-.fa-sun:hover {
-	color: var(--tetriary);
 }
