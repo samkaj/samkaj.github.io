@@ -20,7 +20,7 @@
 
 <nav>
 	<h3>
-		<span class="pink">> </span>samkaj
+		<span class="pink">{'</> '}</span>samkaj
 	</h3>
 	<ul>
 		<li>
@@ -42,7 +42,8 @@
 		display: flex;
 		align-content: space-between;
 		font-size: 1.1rem;
-		width: 100%;
+		width: 80vw;
+		margin: auto;
 
 		h3 {
 			width: 100%;
@@ -76,6 +77,11 @@
 		color: var(--pink);
 	}
 
+	i,
+	a {
+		color: var(--fg);
+	}
+
 	.pink {
 		color: var(--pink);
 	}
@@ -83,6 +89,12 @@
 	@keyframes blinker {
 		50% {
 			opacity: 0;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		nav {
+			width: 90vw;
 		}
 	}
 </style>

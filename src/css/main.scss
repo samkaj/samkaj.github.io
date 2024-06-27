@@ -5,16 +5,20 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fira Mono", monospace;
-  font-weight: 400;
-  letter-spacing: -1px;
+	font-family: 'Fira Mono', monospace;
+	font-weight: 400;
+	letter-spacing: -1px;
 }
 
 a,
 p,
 label,
 li {
-  font-family: "Fira Sans", sans-serif;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+	color: var(--purple);
 }
 
 button {

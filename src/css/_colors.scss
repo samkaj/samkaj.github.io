@@ -1,33 +1,44 @@
 :root {
-  --black0: #131314;
-  --black1: #1b1b1d;
-  --black2: #2a2a2d;
-  --black3: #3e3e43;
-  --black4: #57575f;
-  --black5: #757581;
-  --black6: #9998a8;
-  --black7: #c1c0d4;
+	--black0: #131314;
+	--black1: #1b1b1d;
+	--black2: #2a2a2d;
+	--black3: #3e3e43;
+	--black4: #57575f;
+	--black5: #757581;
+	--black6: #9998a8;
+	--black7: #c1c0d4;
 
-  --orange: #f5a191;
-  --green: #90b99f;
-  --yellow: #e6b99d;
-  --purple: #aca1cf;
-  --pink: #e29eca;
-  --red: #ea83a5;
+	--orange: #f5a191;
+	--green: #90b99f;
+	--yellow: #e6b99d;
+	--purple: #aca1cf;
+	--blue: #90cce0;
+	--cyan: #84ecf7;
+	--pink: #e29eca;
+	--red: #ea83a5;
+
+	--transparent-orange: #f5a29174;
+	--transparent-green: #90b99f62;
+	--transparent-yellow: #e6b99d4d;
+	--transparent-purple: #aca1cf58;
+	--transparent-blue: #90cce05b;
+	--transparent-cyan: #84ecf757;
+	--transparent-pink: #e29eca4e;
+	--transparent-red: #ea83a554;
 }
 
 html[data-theme='dark'] {
-  --fg: #161617;
-  --bg: #c9c7cd;
+	--fg: #161617;
+	--bg: #c9c7cd;
 }
 
 html[data-theme='light'] {
-  --bg: #161617;
-  --fg: #c9c7cd;
+	--bg: #161617;
+	--fg: #c9c7cd;
 }
 
 html {
-  background: var(--bg);
+	background: var(--bg);
 }
 
 h1,
@@ -39,7 +50,7 @@ h6,
 p,
 a,
 i {
-  color: var(--fg);
+	color: var(--fg);
 	text-decoration: none;
 }
 
