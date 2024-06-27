@@ -11,13 +11,6 @@
 </div>
 
 <style lang="scss">
-	li {
-		text-align: center;
-		border-radius: 10px;
-		border: dashed 2px var(--black2);
-		margin-top: 1em;
-	}
-
 	.company {
 		font-family: 'Fira Mono', monospace;
 		letter-spacing: -1px;

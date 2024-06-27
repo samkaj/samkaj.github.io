@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { text } from '@sveltejs/kit';
 	import Header from '../header.svelte';
 	import type { Item } from './timeline';
 	import TimelineItem from './timeline_item.svelte';
@@ -36,7 +35,7 @@
 </script>
 
 <div class="timeline">
-	<Header accent="green" text="experience" />
+	<Header accent="yellow" text="experience" />
 	<div class="separator" />
 	<ul>
 		{#each items as item}
