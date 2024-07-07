@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Commits from '../components/commits.svelte';
 	import Timeline from '../components/timeline/timeline.svelte';
 	import Whoami from '../components/whoami.svelte';
 </script>
@@ -6,17 +7,19 @@
 <div class="page">
 	<Whoami />
 	<Timeline />
+	<Commits />
 </div>
 
 <style lang="scss">
 	.page {
 		display: grid;
-		width: 80vw;
+		width: 90vw;
+		max-width: 1920px;
 		margin: auto;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;
 		grid-template-areas:
-			'whoami pic'
+			'whoami github'
 			'timeline timeline';
 		gap: 1em;
 	}

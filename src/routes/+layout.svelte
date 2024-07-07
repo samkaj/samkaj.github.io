@@ -42,7 +42,8 @@
 		display: flex;
 		align-content: space-between;
 		font-size: 1.1rem;
-		width: 80vw;
+		width: 90vw;
+		max-width: 1920px;
 		margin: auto;
 
 		h3 {

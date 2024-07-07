@@ -7,10 +7,10 @@
 	<article>
 		<p>
 			I'm Samuel Kajava, a developer situated in Gothenburg, Sweden. I'm a master's student at
-			Chalmers University of Technology and a software intern at Ericsson.
+			Chalmers University of Technology and a software developer at Ericsson.
 		</p>
 		<p>
-			I basically live in Neovim and would label my interests as language-agnostic, but must of my
+			I basically live in Neovim and would label my interests as language-agnostic, but most of my
 			experience lies in files which end with
 			<span class="go">.go</span>,
 			<span class="rust">.rs</span>,
