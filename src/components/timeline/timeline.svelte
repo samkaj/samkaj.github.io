@@ -21,11 +21,7 @@
 			'Summer 2023'
 		),
 		createItem('Chalmers', 'Computer Systems & Networks', 'Fall 2023'),
-		createItem(
-			'Ericsson',
-			'Software intern working rewriting systems in Rust',
-			'Fall 2023 - Fall 2024'
-		),
+		createItem('Ericsson', 'Software intern rewriting systems in Rust', 'Fall 2023 - Fall 2024'),
 		createItem(
 			'Chalmers (MSc.)',
 			"Master's thesis work in language-based security",
@@ -57,6 +53,7 @@
 		width: 100%;
 		border-bottom: 2px dashed var(--black2);
 		margin-bottom: -1.2em;
+		margin-top: 1em;
 	}
 
 	ul {
@@ -68,7 +65,7 @@
 		padding: 0;
 	}
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 1200px) {
 		.separator {
 			display: none;
 		}

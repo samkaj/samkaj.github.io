@@ -27,6 +27,10 @@
 		padding-left: 1em;
 	}
 
+	p {
+		text-align: left;
+	}
+
 	.position {
 		font-size: 0.9em;
 		color: var(--black6);
@@ -41,7 +45,7 @@
 		font-family: 'Fira Mono', monospace;
 	}
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 1200px) {
 		.company::before {
 			content: '--';
 			margin-right: 0.5em;

@@ -8,6 +8,7 @@
 <style lang="scss">
 	h1 {
 		font-size: 1.5em;
+		margin-bottom: 0;
 	}
 
 	.prefix {

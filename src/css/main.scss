@@ -4,6 +4,10 @@
 	color: var(--fg);
 }
 
+.intro {
+	font-weight: 500;
+}
+
 h1,
 h2,
 h3,
@@ -26,10 +30,15 @@ li,
 input,
 button {
 	font-family: 'Fira Sans', sans-serif;
+	text-align: justify;
 }
 
 a {
 	color: var(--purple);
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 button:hover {
@@ -38,4 +47,48 @@ button:hover {
 
 .bold {
 	font-weight: bold;
+}
+
+.go,
+.rust,
+.cpp,
+.java,
+.node {
+	color: var(--black7);
+	border: solid 1px;
+	border-radius: 0.4em;
+	padding: 0.1em 0.2em;
+	margin: 0.2em;
+	font-size: 0.9em;
+	font-family: 'Fira Mono', monospace;
+}
+
+.go {
+	border-color: var(--cyan);
+	color: var(--cyan);
+	background-color: var(--transparent-cyan);
+}
+
+.rust {
+	border-color: var(--red);
+	color: var(--red);
+	background-color: var(--transparent-red);
+}
+
+.node {
+	border-color: var(--blue);
+	color: var(--blue);
+	background-color: var(--transparent-blue);
+}
+
+.java {
+	border-color: var(--yellow);
+	color: var(--yellow);
+	background-color: var(--transparent-yellow);
+}
+
+.cpp {
+	border-color: var(--green);
+	color: var(--green);
+	background-color: var(--transparent-green);
 }
