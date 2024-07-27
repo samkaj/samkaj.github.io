@@ -12,7 +12,7 @@
 		createItem('Cytiva', 'Devenv in Golang and framework developer in C#', 'Summer 2022'),
 		createItem(
 			'Chalmers (BSc.)',
-			'Graduate with thesis based with research in performance benchmarking as a CI tool',
+			'Graduate with thesis based on research in performance benchmarking as a CI tool',
 			'Summer 2023'
 		),
 		createItem(
