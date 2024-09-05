@@ -1,7 +1,7 @@
 {
 	"name": "samkaj.github.io",
-	"version": "0.0.1",
-	"private": true,
+	"version": "0.1.1",
+	"private": false,
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
