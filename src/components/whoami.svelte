@@ -6,13 +6,13 @@
 	<Header text="whoami" accent="green" />
 	<p class="intro">
 		I'm Samuel Kajava, a developer situated in Gothenburg, Sweden. I'm a master's student at
-		Chalmers University of Technology and a software developer at Ericsson.
+		Chalmers University of Technology.
 	</p>
 	<p>
 		I have a bachelor's degree in Software Engineering since 2023. My thesis focused on automating
 		performance tests in Java projects and incorporating it in CI pipelines on GitHub. I'm currently
 		pursuing a master's degree in Computer Systems and Networks, expected to graduate in January
-		2025. My master's thesis explores the security of browser extensions.
+		2025. My master's thesis focuses on <a href="https://cheatsheetseries.owasp.org/cheatsheets/Prototype_Pollution_Prevention_Cheat_Sheet.html">prototype pollution</a> in JavaScript.
 	</p>
 	<p>
 		I basically live in Neovim and would label my interests as language-agnostic, but most of my
