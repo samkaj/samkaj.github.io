@@ -25,17 +25,12 @@
 	--transparent-cyan: #84ecf757;
 	--transparent-pink: #e29eca4e;
 	--transparent-red: #ea83a554;
-}
 
-html[data-theme='dark'] {
-	--fg: #161617;
-	--bg: #c9c7cd;
-}
-
-html[data-theme='light'] {
-	--bg: #161617;
+	--bg: #141415;
 	--fg: #c9c7cd;
 }
+
+
 
 html {
 	background: var(--bg);
