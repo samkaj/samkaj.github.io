@@ -14,7 +14,6 @@
 			'Software intern improving integration testing in Golang',
 			'Summer 2023'
 		),
-		createItem('Chalmers', 'Computer Systems & Networks', 'Fall 2023'),
 		createItem('Ericsson', 'Software intern rewriting systems in Rust', 'Fall 2023 - Fall 2024'),
 		createItem(
 			'Chalmers (MSc.)',

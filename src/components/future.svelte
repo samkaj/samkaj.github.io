@@ -3,7 +3,7 @@
 </script>
 
 <div class="h1">
-	<Header accent="pink" text="work with me" />
+	<Header accent="pink" text="about me" />
 </div>
 <div class="h2">
 	<Header accent="green" text="some projects" />
@@ -11,23 +11,19 @@
 <article>
 	<main>
 		<p class="intro">
-			I am graduating soon, and looking for new opportunities! If you want to connect with me, hit
-			me up on <a href="https://linkedin.com/in/samuel-kajava">LinkedIn</a> or send an email to
-			<a href="mailto:samuelkajava@proton.me">samuelkajava@proton.me</a>!
+            Whenever I have time over, I enjoy playing 🎱 pool, tweaking my ❄️  NixOS system, spending time with 
+            my partner+friends, and hacking on various personal projects.
 		</p>
 		<p>
-			I have experience in distributed systems, testing, fullstack web development and would love to
-			work on projects utilizing C++, Golang or Node. I thrive in projects on a comprehensible
-			scale. This can range from microservices to larger projects with clear separation of concerns
-			and good documentation.
+            As of 2025, my main goals are to do good security research, learn more about programming language design and
+            static analysis, and hopefully find a nice intersection between those ambitions. I strongly believe robust language 
+            design inherently improves security - something which motivates me greatly!
 		</p>
-		<p>
-			At Chalmers, I have learned a lot about object oriented design and can appreciate readable
-			code. While OOP is sometimes clunky (<i>read three-line functions and bloated abstractions</i
-			>), I still think most practices are very valuable in any paradigm. I see this mindset as a
-			strength and you can expect me to write code which reflects this philosophy. Domain does not
-			really matter, I just want to write readable, fast code.
-		</p>
+        <p>
+            My past experiences, through both industry, academia and personal work, has provided me with a great toolset
+            of technologies. I have experience in distributed systems, compiler design and fullstack web development,
+            which all help me in my research and teaching.
+        </p>
 	</main>
 
 	<aside>

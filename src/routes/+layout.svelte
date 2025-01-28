@@ -7,6 +7,9 @@
 	<h3>
 		<span class="pink">{'</> '}</span>samkaj
 	</h3>
+    <h3>
+        <a href="/blog">blog</a> 
+    </h3>
 	<ul>
 		<li>
 			<a href="https://linkedin.com/in/samuel-kajava"><i class="nf nf-fa-linkedin" /></a>
