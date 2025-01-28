@@ -8,13 +8,7 @@
 	};
 
 	let items: Item[] = [
-		createItem('Chalmers', 'Software Engineering', 'Fall 2020'),
 		createItem('Cytiva', 'Devenv in Golang and framework developer in C#', 'Summer 2022'),
-		createItem(
-			'Chalmers (BSc.)',
-			'Graduate with thesis based on research in performance benchmarking as a CI tool',
-			'Summer 2023'
-		),
 		createItem(
 			'Ericsson',
 			'Software intern improving integration testing in Golang',
@@ -24,9 +18,10 @@
 		createItem('Ericsson', 'Software intern rewriting systems in Rust', 'Fall 2023 - Fall 2024'),
 		createItem(
 			'Chalmers (MSc.)',
-			"Master's thesis work in language-based security",
-			'Fall 2024 - Jan 2025'
-		)
+			"Civilingenjör. BSc in software engineering. MSc in computer science (language-based security)",
+			'Fall 2020 - Jan 2025'
+		),
+		createItem('PhD Student', 'PhD student in language-based security', 'Spring 2025 - '),
 	];
 </script>
 
