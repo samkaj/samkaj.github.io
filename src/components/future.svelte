@@ -11,19 +11,16 @@
 <article>
 	<main>
 		<p class="intro">
-            Whenever I have time over, I enjoy playing 🎱 pool, tweaking my ❄️  NixOS system, spending time with 
-            my partner+friends, and hacking on various personal projects.
+			As of 2025, my main goals are to do good security research, learn more about programming
+			language design and static analysis, and hopefully find a nice intersection between those
+			ambitions. I strongly believe robust language design inherently improves security - something
+			which motivates me greatly!
 		</p>
 		<p>
-            As of 2025, my main goals are to do good security research, learn more about programming language design and
-            static analysis, and hopefully find a nice intersection between those ambitions. I strongly believe robust language 
-            design inherently improves security - something which motivates me greatly!
+			My past experiences, through both industry, academia and personal work, has provided me with a
+			great toolset of technologies. I have experience in distributed systems, compiler design and
+			fullstack web development, which all help me in my research and teaching.
 		</p>
-        <p>
-            My past experiences, through both industry, academia and personal work, has provided me with a great toolset
-            of technologies. I have experience in distributed systems, compiler design and fullstack web development,
-            which all help me in my research and teaching.
-        </p>
 	</main>
 
 	<aside>
