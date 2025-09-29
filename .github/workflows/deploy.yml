@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'main'
+    branches: ['main']
 
 jobs:
   build_site:
@@ -11,35 +11,47 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build
+      - name: Build site
         env:
           BASE_PATH: '/samkaj.github.io'
         run: npm run build
+
+      # ensure no symlinks or junk enter the artifact
+      - name: Prepare artifact for Pages
+        run: |
+          rm -rf out
+          mkdir out
+          cp -r build/* out/
 
       - name: Upload build output
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: build/
+          path: ./out
+          if-no-files-found: error
+          retention-days: 1
 
   deploy:
     needs: build_site
     runs-on: ubuntu-latest
+
     permissions:
-      pages: write
-      id-token: write
+      pages: write # required for GitHub Pages deployment
+      id-token: write # required for OIDC authentication
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
