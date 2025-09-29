@@ -3,6 +3,10 @@
 	import '../css/main.scss';
 </script>
 
+<svelte:head>
+	<title>Samuel Kajava</title>
+</svelte:head>
+
 <nav>
 	<h3>
 		<span class="pink">{'</> '}</span>samkaj
@@ -23,7 +27,7 @@
 </main>
 
 <style lang="scss">
-  @import "https://www.nerdfonts.com/assets/css/webfont.css";
+	@import 'https://www.nerdfonts.com/assets/css/webfont.css';
 
 	nav {
 		display: flex;
@@ -63,21 +67,21 @@
 	i:hover,
 	a:hover {
 		color: var(--pink);
-    text-decoration: none;
+		text-decoration: none;
 	}
 
-  .nf-md-github {
-    font-size: 1.15rem;
-  }
+	.nf-md-github {
+		font-size: 1.15rem;
+	}
 
 	i,
 	a {
 		color: var(--fg);
 	}
 
-  i {
-    font-size: 1rem;
-  }
+	i {
+		font-size: 1rem;
+	}
 
 	.pink {
 		color: var(--pink);

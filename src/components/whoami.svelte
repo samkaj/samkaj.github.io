@@ -10,10 +10,10 @@
 	</p>
 	<p>
 		Prior to my PhD studies, I have graduated from the software engineering <i>civilingenjör</i>
-		program with a bachelor's degree in software engineering and master's degree in computer
-		science. My BSc thesis covers a way of introducing performance benchmarking into CI pipelines on
-		GitHub, with scalability in mind. My master thesis work introduced a fully automatic approach
-		for detecting prototype pollution in client-side
+		program with a bachelor's degree in software engineering and master's degree in computer science.
+		My BSc thesis covers a way of introducing performance benchmarking into CI pipelines on GitHub, with
+		scalability in mind. My master thesis work introduced a fully automatic approach for detecting prototype
+		pollution in client-side
 		<span class="node">JavaScript</span>.
 	</p>
 	<p>

@@ -17,10 +17,10 @@
 		createItem('Ericsson', 'Software intern rewriting systems in Rust', 'Fall 2023 - Fall 2024'),
 		createItem(
 			'Chalmers (MSc.)',
-			"Civilingenjör. BSc in software engineering. MSc in computer science (language-based security)",
+			'Civilingenjör. BSc in software engineering. MSc in computer science (language-based security)',
 			'Fall 2020 - Jan 2025'
 		),
-		createItem('PhD Student', 'PhD student in language-based security', 'Spring 2025 - '),
+		createItem('PhD Student', 'PhD student in language-based security', 'Spring 2025 - ')
 	];
 </script>
 
