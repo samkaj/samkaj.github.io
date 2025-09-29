@@ -9,9 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
@@ -19,31 +20,27 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: build
+      - name: Build
         env:
           BASE_PATH: '/samkaj.github.io'
-        run: |
-          npm run build
+        run: npm run build
 
-      - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v4
+      - name: Upload build output
+        uses: actions/upload-artifact@v4
         with:
-          # this should match the `pages` option in your adapter-static options
-          path: 'build/'
+          name: github-pages
+          path: build/
 
   deploy:
     needs: build_site
     runs-on: ubuntu-latest
-
     permissions:
       pages: write
       id-token: write
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
