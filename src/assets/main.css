@@ -1,0 +1,162 @@
+:root {
+	--fg: #ded7d0;
+	--alt-fg: #686069;
+	--bg: #1e1d23;
+	--alt-bg: #413e41;
+	--line: #1a191e;
+	--primary: #bda9d4;
+	--secondary: #e0828d;
+	--tetriary: #efd472;
+
+	font-family: "Work Sans", sans-serif;
+	color: var(--fg);
+	background: var(--bg);
+}
+
+p {
+	font-size: 14pt;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Work Sans", monospace;
+	margin-top: 4px;
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+.single-line-snippet {
+	font-family: "JetBrains Mono", monospace;
+}
+
+html {
+	margin: auto;
+	max-width: 1800px;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr 1fr;
+	gap: 40px;
+	grid-template-areas:
+		". . . ."
+		". a b ."
+		". l l ."
+		". c c .";
+
+	#intro {
+		align-self: center;
+		grid-area: b;
+
+        p {
+            font-size: 16pt;
+        }
+
+		#socials {
+			margin: 0;
+			padding: 0;
+			li {
+				list-style-type: none;
+				float: left;
+				margin-right: 12px;
+				font-size: 18pt;
+			}
+
+			a {
+				color: var(--fg);
+			}
+
+			a:hover {
+				color: var(--primary);
+			}
+
+			span {
+				font-size: 12pt;
+			}
+		}
+	}
+
+	hr.sep {
+		grid-area: l;
+		border-color: var(--alt-bg);
+		background-color: var(--alt-bg);
+		color: var(--alt-bg);
+		border-width: 0;
+		height: 1px;
+		width: 100%;
+		margin: 0;
+	}
+
+	#intro-img {
+		grid-area: a;
+		object-fit: cover;
+		border-radius: 100%;
+		width: 100%;
+		align-self: center;
+	}
+
+	#nav {
+		grid-area: c;
+		background: red;
+	}
+
+	h1 {
+		font-size: 48pt;
+	}
+
+	h2 {
+		font-size: 18pt;
+	}
+
+	p {
+		color: var(--alt-fg);
+	}
+}
+
+article#experience {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 40px;
+	grid-template-areas: ". edu work teach .";
+	align-self: center;
+	margin: 0;
+	padding: 0;
+
+    p {
+        color: var(--alt-fg);
+    }
+
+	ul {
+		padding-left: 20px;
+	}
+
+	li {
+		font-size: 14pt;
+        margin-top: 10px;
+	}
+
+	li::marker {
+		color: var(--primary);
+	}
+
+	div {
+		border-left: 1px solid var(--alt-bg);
+		padding-left: 20px;
+	}
+
+	#edu {
+		grid-area: edu;
+	}
+
+	#work {
+		grid-area: work;
+	}
+
+	#teach {
+		grid-area: teach;
+	}
+}
