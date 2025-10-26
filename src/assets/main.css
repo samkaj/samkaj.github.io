@@ -13,6 +13,17 @@
 	background: var(--bg);
 }
 
+hr {
+	border-color: var(--alt-bg);
+	border-color: var(--alt-bg);
+	background-color: var(--alt-bg);
+	color: var(--alt-bg);
+	border-width: 0;
+	height: 1px;
+	width: 100%;
+	margin: 0;
+}
+
 p {
 	font-size: 14pt;
 }
@@ -38,6 +49,51 @@ html {
 	max-width: 1800px;
 }
 
+a {
+    color: var(--primary);
+}
+
+nav.navbar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr 1fr;
+	grid-template-areas: ". links links .";
+	#home-link {
+		color: var(--primary);
+        margin-right: 12px;
+	}
+
+    #home-link:hover {
+        color: var(--fg);
+    }
+
+	ul {
+		grid-area: links;
+		border-bottom: 1px solid var(--alt-bg);
+		margin: 10px 20px;
+		padding: 10px;
+        padding-bottom: 20px;
+	}
+
+	li {
+		float: left;
+		margin-right: 12px;
+	}
+
+	li::marker {
+		content: " | ";
+	}
+
+	a {
+		font-size: 18pt;
+		color: var(--fg);
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: var(--primary);
+	}
+}
+
 main {
 	display: grid;
 	grid-template-columns: 1fr 1fr 2fr 1fr;
@@ -52,9 +108,9 @@ main {
 		align-self: center;
 		grid-area: b;
 
-        p {
-            font-size: 16pt;
-        }
+		p {
+			font-size: 16pt;
+		}
 
 		#socials {
 			margin: 0;
@@ -82,13 +138,6 @@ main {
 
 	hr.sep {
 		grid-area: l;
-		border-color: var(--alt-bg);
-		background-color: var(--alt-bg);
-		color: var(--alt-bg);
-		border-width: 0;
-		height: 1px;
-		width: 100%;
-		margin: 0;
 	}
 
 	#intro-img {
@@ -126,9 +175,9 @@ article#experience {
 	margin: 0;
 	padding: 0;
 
-    p {
-        color: var(--alt-fg);
-    }
+	p {
+		color: var(--alt-fg);
+	}
 
 	ul {
 		padding-left: 20px;
@@ -136,7 +185,7 @@ article#experience {
 
 	li {
 		font-size: 14pt;
-        margin-top: 10px;
+		margin-top: 10px;
 	}
 
 	li::marker {
