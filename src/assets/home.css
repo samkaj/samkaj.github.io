@@ -1,0 +1,114 @@
+main {
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	gap: 40px;
+	grid-template-areas:
+		" a b b"
+		" l l l";
+
+	#intro {
+		align-self: center;
+		grid-area: b;
+
+		p {
+			font-size: 16pt;
+		}
+
+		#socials {
+			margin: 0;
+			padding: 0;
+			li {
+				list-style-type: none;
+				float: left;
+				margin-right: 12px;
+				font-size: 18pt;
+			}
+
+			a {
+				color: var(--fg);
+			}
+
+			a:hover {
+				color: var(--primary);
+			}
+
+			span {
+				font-size: 12pt;
+			}
+		}
+	}
+
+	hr.sep {
+		grid-area: l;
+        margin-top: 0;
+        margin-bottom: 40px;
+	}
+
+	#intro-img {
+		grid-area: a;
+		object-fit: cover;
+		border-radius: 100%;
+		width: 100%;
+		align-self: center;
+	}
+
+	h1 {
+		font-size: 48pt;
+	}
+
+	h2 {
+		font-size: 18pt;
+	}
+
+	p {
+		color: var(--alt-fg);
+	}
+}
+
+article#experience {
+	display: grid;
+	margin: auto;
+	max-width: 1200px;
+	grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid var(--alt-bg);
+    padding: 20px 0;
+	gap: 40px;
+	grid-template-areas: "edu work teach";
+	align-self: center;
+
+	p {
+		color: var(--alt-fg);
+	}
+
+	ul {
+		padding-left: 20px;
+	}
+
+	li {
+		font-size: 14pt;
+		margin-top: 10px;
+	}
+
+	li::marker {
+		color: var(--primary);
+	}
+
+	div {
+		border-left: 1px solid var(--alt-bg);
+		padding-left: 20px;
+	}
+
+	#edu {
+		grid-area: edu;
+	}
+
+	#work {
+		grid-area: work;
+	}
+
+	#teach {
+		grid-area: teach;
+	}
+}
