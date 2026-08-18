@@ -10,12 +10,6 @@
 </div>
 <article>
 	<main>
-		<p class="intro">
-			As of 2025, my main goals are to do good security research, learn more about programming
-			language design and static analysis, and hopefully find a nice intersection between those
-			ambitions. I strongly believe robust language design inherently improves security - something
-			which motivates me greatly!
-		</p>
 		<p>
 			My past experiences, through both industry, academia and personal work, has provided me with a
 			great toolset of technologies. I have experience in distributed systems, compiler design and
